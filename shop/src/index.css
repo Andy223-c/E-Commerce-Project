@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  /* Applying the background to both html and body is the 
+     industry standard for preventing theme flickering. */
+  html,
+  body {
+    @apply min-h-screen bg-slate-50 dark:bg-gray-950 transition-colors duration-500;
+    margin: 0;
+    padding: 0;
+    font-family:
+      "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  /* This ensures the React root container doesn't have a 
+     default white background that shows during exit animations */
+  #root {
+    @apply min-h-screen bg-transparent;
+  }
+}
+@theme {
+  --breakpoint-xs: 30rem; /* 480px */
+}

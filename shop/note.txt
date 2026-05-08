@@ -1,0 +1,6 @@
+src/
+├── components/       # Reusable UI (Button, Card, Navbar, Footer)
+├── features/         # Logic-heavy components (Cart, ProductFilter)
+├── pages/            # Home, Mens, Womens, Kids, ProductPage, Checkout
+├── context/          # Global state (CartContext, AuthContext)
+└── data/             # Mock product data or API utility
