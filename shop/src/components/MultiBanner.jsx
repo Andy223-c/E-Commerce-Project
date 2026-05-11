@@ -16,7 +16,7 @@ const bannerData = [
     image:"" , },
   {
     id: 3,
-    title: "Kids Back-to-School Gears are Here!",
+    title: "MEN AND WOMEN",
     offer: "Special Deal",
     bgColor: "bg-[#a29bfe]/40",
     image: "", },

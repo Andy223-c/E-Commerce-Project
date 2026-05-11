@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 function NavBar() {
   const navLinks = [
-    { name: "Home", path: "" },
-    { name: "Courses", path: "/courses" },
-    { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
+    { name: "HOME", path: "" },
+    { name: "MEN", path: "/courses" },
+    { name: "WOMEN", path: "/about" },
+    { name: "ALL", path: "/contact" },
   ];
 
   return (
