@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import NewArrivalCard from "../New Arrival/NewArrivalCard";
-function NewArrivalSection() {
+
+function SummerSection() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("[GET] https://api.escuelajs.co/api/v1/products")
+    fetch("https://fakestoreapi.com/products/category")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
@@ -13,13 +14,17 @@ function NewArrivalSection() {
       })
       .catch((err) => console.error("Error fetching items:", err));
   }, []);
+
   return (
-    <>
-      <div className="py-8 px-10 bg-gray-200 dark:bg-gray-900 transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-4 mb-7 flex justify-between items-center">
-          <h2 className="text-3xl font-bold text-gray-950 dark:text-white">
-            New Arrival
-          </h2>
+    <section className="py-12 bg-white dark:bg-gray-900 transition-colors">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Header */}
+        <div className="flex justify-between items-end mb-7">
+          <div>
+            <h2 className="text-3xl font-black text-gray-900 dark:text-white">
+              Best for Summer
+            </h2>
+          </div>
           <button className="text-sm font-bold text-indigo-600 hover:underline">
             See All
           </button>
@@ -41,16 +46,16 @@ function NewArrivalSection() {
                 key={item.id}
                 item={{
                   ...item,
-                  category: "Menswear",
-                  isLimited: item.rating.rate > 4, // Fake "Limited" logic based on rating
+                  category: "Womenswear",
+                  isLimited: item.rating.rate > 4,
                 }}
               />
             ))}
           </div>
         )}
       </div>
-    </>
+    </section>
   );
 }
 
-export default NewArrivalSection;
+export default SummerSection;

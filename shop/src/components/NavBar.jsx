@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 function NavBar() {
   const navLinks = [
     { name: "HOME", path: "" },
-    { name: "MEN", path: "/courses" },
-    { name: "WOMEN", path: "/about" },
-    { name: "ALL", path: "/contact" },
+    { name: "MEN", path: "/men" },
+    { name: "WOMEN", path: "/women" },
+    { name: "ACCESSORIES", path: "/acc" },
   ];
 
   return (

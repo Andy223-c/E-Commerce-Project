@@ -25,9 +25,9 @@ function Catergories() {
             Catergories
           </h2>
 
-          <div className="">
-            <Link to="/">See All</Link>
-          </div>
+          <button className="text-sm font-bold text-indigo-600 hover:underline">
+            See All
+          </button>
         </div>
         <div className="">
           <CatergoriesButton />
