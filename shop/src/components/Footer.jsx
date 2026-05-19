@@ -15,7 +15,7 @@ function Footer() {
               Premium apparel for the modern individual. Quality, comfort, and
               style delivered to your doorstep.
             </p>
-            {/* Boxicons Socials */}
+
             <div className="flex gap-3">
               <SocialIcon icon="bx bxl-facebook" />
               <SocialIcon icon="bx bxl-instagram" />
@@ -80,7 +80,6 @@ const SocialIcon = ({ icon }) => (
   </a>
 );
 
-// Sub-component for Footer Link Groups
 const FooterGroup = ({ title, links }) => (
   <div className="space-y-6">
     <h4 className="font-bold text-gray-950 dark:text-white uppercase text-xs tracking-widest">

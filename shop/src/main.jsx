@@ -6,13 +6,15 @@ import "boxicons/css/boxicons.min.css";
 import { BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Footer from "./components/Footer.jsx";
+import Men from "./pages/Men.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
+      <Men />
       <Home />
       <App />
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   </StrictMode>,
 );
